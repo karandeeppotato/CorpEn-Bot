@@ -1,0 +1,47 @@
+[
+  {
+    "indexNo": 1,
+    "name": "Climate Companion",
+    "isCompleted": true
+  },
+  {
+    "indexNo": 2,
+    "name": "Corpen Discord Bot",
+    "isCompleted": true
+  },
+  {
+    "indexNo": 3,
+    "name": "Password Manager",
+    "isCompleted": false
+  },
+  {
+    "indexNo": 4,
+    "name": "Bill split App",
+    "isCompleted": false
+  },
+  {
+    "indexNo": 5,
+    "name": "Kabootar Gang Photo Gallery",
+    "isCompleted": false
+  },
+  {
+    "indexNo": 6,
+    "name": "Bit-Torrent Client",
+    "isCompleted": false
+  },
+  {
+    "indexNo": 7,
+    "name": "Corpen Meme Bot",
+    "isCompleted": false
+  },
+  {
+    "indexNo": 8,
+    "name": "Spotify Playlist Client",
+    "isCompleted": false
+  },
+  {
+    "indexNo": 9,
+    "name": "Portfolio",
+    "isCompleted": false
+  }
+]
