@@ -79,7 +79,6 @@ client.on("interactionCreate", async (interaction) => {
           "projectData.json",
           JSON.stringify(projects, null, 2)
         );
-        console.log("Projects updated successfully.");
       } catch (err) {
         console.error("Error writing projects file:", err);
       }
@@ -91,7 +90,6 @@ client.on("interactionCreate", async (interaction) => {
       const projectNumber = interaction.options.getInteger("number");
 
       try {
-        // const data = await fs.readFile('projectsData.json', 'utf8');
         if (projectNumber < 1 || projectNumber > projects.length) {
           isUpdated = false;
         }
