@@ -12,9 +12,10 @@ import { add } from "./Commands/add.js";
 import { update } from "./Commands/update.js";
 import { show } from "./Commands/show.js";
 import { remove } from "./Commands/remove.js";
+import { help } from "./Commands/help.js";
 import "dotenv/config";
 
-const commandList = [add, update, show, remove];
+const commandList = [add, update, show, remove, help];
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
@@ -197,6 +198,22 @@ client.on("interactionCreate", async (interaction) => {
         }).then(() => {
           commandList[3].execute(interaction, isRemoved);
         });
+    }
+
+    if(command === "help") {
+      const helpEmbed = new EmbedBuilder()
+        .setColor(0x0099FF)
+        .setTitle("Help")
+        .setDescription("List of all the commands available")
+        .addFields(
+          { name: "/add [name]", value: "Add a new project" },
+          { name: "/update [number]", value: "Update the status of a project" },
+          { name: "/show [filter]", value: "Show the projects" },
+          { name: "/remove [number]", value: "Remove a project" },
+          { name: "/help", value: "Show bot commands to noobies" }
+        );
+
+      await commandList[4].execute(interaction, helpEmbed);
     }
   }
 });
