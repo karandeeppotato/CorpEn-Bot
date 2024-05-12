@@ -43,7 +43,15 @@
     "indexNo": 9,
     "name": "Portfolio",
     "isCompleted": false
+  },
+  {
+    "indexNo": 10,
+    "name": "Amity Cab Landing Page",
+    "isCompleted": true
+  },
+  {
+    "indexNo": 11,
+    "name": "E-Commerce Website (NEXTjs + ts)",
+    "isCompleted": false
   }
 ]
-
-
